@@ -1,0 +1,125 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    
+    height: 5rem;
+    background-color:white; 
+    align-items: center;
+}
+.flex ul{
+    display: flex;
+    width: 40%;
+}
+.flex img{
+    width: 4%;
+    height: 50%;
+}
+.flex li{
+    list-style: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.flex li:hover{
+  text-decoration: underline;
+}
+.flex input{
+    width: 30%;
+    height: 30%;
+    margin:0 5% ;
+    background-color: rgba(0, 0, 0, 0.091);
+    border-radius:10px;
+}
+.m{
+    display: flex;
+}
+.m div{
+    padding-right: 15px;
+}
+.main{
+    margin: 0;
+    padding: 0;
+}
+.m1 img{
+    width: 90%;
+    padding: 1% 5%;
+}
+.m2 img{
+    width: 100%;
+}.m3 img{
+    width: 49%;
+}
+.m4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.m4 a {
+    width: 25%;
+}
+.m4 img {
+    width: 95%;
+}
+.m5
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.m5 a {
+    width: 16%;
+}
+.m5 img {
+    width: 100%;
+}
+.f1{
+    text-align: center;
+}
+.f1 img{
+    width: 10%;
+}
+@media screen and (max-width:950PX)
+{
+    .flex ul{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        
+    }
+    .flex li{
+        font-size:0.8rem ;
+    }
+}
+@media screen and (max-width:777PX)
+{
+    .m{
+    display: grid;
+    grid-template-columns: repeat(1,auto); 
+    gap: 10px;      
+    }
+    .flex img{
+        width: 10%;
+        height: 50%;
+    }
+}
+@media screen and (max-width:450PX)
+{
+    .flex ul{
+        display: none;
+    }
+    .m{
+        display: flex;
+        font-size: 0.8rem;
+    }
+}
+
+
